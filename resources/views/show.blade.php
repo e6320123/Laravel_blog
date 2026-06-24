@@ -12,7 +12,9 @@
 </nav>
 <div class="container mt-4" style="max-width: 700px;">
     <h2>{{ $post->title }}</h2>
-    <p class="text-muted">{{ $post->content }}</p>
+    <div class="text-muted" style="white-space: pre-wrap; line-height: 1.8;">
+        {{ $post->content }}
+    </div>
     <hr>
     @auth
         <a href="/posts/{{ $post->id }}/edit" class="btn btn-sm btn-warning">編輯</a>
