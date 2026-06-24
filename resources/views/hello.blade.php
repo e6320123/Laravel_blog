@@ -17,7 +17,8 @@
                 <button class="btn btn-outline-danger btn-sm">登出</button>
             </form>
         @else
-            <a href="/login" class="btn btn-outline-light btn-sm">登入</a>
+            <a href="/login" class="btn btn-outline-light btn-sm me-2">登入</a>
+            <a href="/register" class="btn btn-light btn-sm">註冊</a>
         @endauth
     </div>
 </nav>
