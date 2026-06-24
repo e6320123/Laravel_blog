@@ -29,11 +29,11 @@ Route::middleware('auth')->group(function () {
 require __DIR__.'/auth.php';
 
 
-
 Route::get('/', [PostController::class, 'index']);
-Route::get('/create', [PostController::class, 'create']);
-Route::post('/', [PostController::class, 'store']);
-Route::get('/{id}', [PostController::class, 'show']);
-Route::get('/{id}/edit', [PostController::class, 'edit']);
-Route::put('/{id}', [PostController::class, 'update']);
-Route::delete('/{id}', [PostController::class, 'destroy']);
+Route::get('/posts', [PostController::class, 'index']);
+Route::get('/posts/create', [PostController::class, 'create']);
+Route::post('/posts', [PostController::class, 'store']);
+Route::get('/posts/{id}', [PostController::class, 'show']);
+Route::get('/posts/{id}/edit', [PostController::class, 'edit']);
+Route::put('/posts/{id}', [PostController::class, 'update']);
+Route::delete('/posts/{id}', [PostController::class, 'destroy']);
